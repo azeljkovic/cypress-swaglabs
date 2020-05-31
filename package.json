@@ -1,0 +1,22 @@
+{
+  "name": "cypress-swaglabs",
+  "version": "1.0.0",
+  "description": "cypress tests for swaglabs application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azeljkovic/cypress-swaglabs.git"
+  },
+  "author": "Aleksandar Zeljkovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azeljkovic/cypress-swaglabs/issues"
+  },
+  "homepage": "https://github.com/azeljkovic/cypress-swaglabs#readme",
+  "devDependencies": {
+    "cypress": "^4.4.1"
+  }
+}
