@@ -1,13 +1,17 @@
-describe('Invalid login', () => {
-    it('Verifies that login will fail when wrong password is used', () => {
+describe('Login invalid credentials', () => {
+    it('Verifies that login fails with invalid credentials', () => {
+        //Given
         cy.visit('/')
         cy.get('#user-name')
           .type('standard_user')
         cy.get('#password')
-          .type('wrong_pass')
+          .type('invalid_pass')
+
+        //When
         cy.get('[class="btn_action"]')
           .click()
-
+          
+        //Then
         cy.get('[class="error-button"]')
           .should('exist')
         cy.get('[data-test="error"]')
