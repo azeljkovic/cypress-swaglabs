@@ -8,11 +8,11 @@ describe('Locked out user login', () => {
           .type('secret_sauce')
 
         //When
-        cy.get('[class="btn_action"]')
+        cy.get('.btn_action')
           .click()
 
         //Then
-        cy.get('[class="error-button"]')
+        cy.get('.error-button')
           .should('exist')
         cy.get('[data-test="error"]')
             .should('have.text', 'Epic sadface: Sorry, this user has been locked out.')

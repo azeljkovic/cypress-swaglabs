@@ -8,14 +8,14 @@ describe('Login valid credentials', () => {
           .type('secret_sauce')
 
         //When
-        cy.get('[class="btn_action"]')
+        cy.get('.btn_action')
           .click()
 
         //Then
         cy.url().should('eq', 'https://www.saucedemo.com/inventory.html')
-        cy.get('[class="bm-burger-button"]')
+        cy.get('.bm-burger-button')
           .should('exist')
-        cy.get('[class="shopping_cart_container"]')
+        cy.get('.shopping_cart_container')
           .should('exist')
     })
   })
