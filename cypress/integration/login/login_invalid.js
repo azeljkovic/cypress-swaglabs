@@ -1,17 +1,19 @@
+/// <reference types="cypress" />
+
 describe('Login invalid credentials', () => {
     it('Verifies that login fails with invalid credentials', () => {
-        //Given
+        cy.log("*** Given ***")
         cy.visit('/')
         cy.get('#user-name')
           .type('standard_user')
         cy.get('#password')
           .type('invalid_pass')
 
-        //When
+        cy.log("*** When ***")
         cy.get('.btn_action')
           .click()
           
-        //Then
+        cy.log("*** Then ***")
         cy.get('.error-button')
           .should('exist')
         cy.get('[data-test="error"]')

@@ -1,6 +1,8 @@
+/// <reference types="cypress" />
+
 describe('Reset app state', () => {
     it('Verifies that reset app button will reset the cart.', () => {
-        //Given
+        cy.log("*** Given ***")
         cy.window().then((win) => {
             sessionStorage.setItem("cart-contents","[4,0,1]")
         })
@@ -8,11 +10,11 @@ describe('Reset app state', () => {
         cy.get('.bm-burger-button')
           .click()
 
-        //When
+        cy.log("*** When ***")
         cy.get('#reset_sidebar_link')
           .click()
 
-        //Then
+        cy.log("*** Then ***")
         Cypress.Commands.add('getSessionStorage', (key) => {
             cy.window().then((window) => window.sessionStorage.getItem(key))
           })
