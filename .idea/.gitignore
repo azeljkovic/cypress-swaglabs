@@ -3,3 +3,7 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+/cypress-swaglabs.iml
+/misc.xml
+/modules.xml
+/vcs.xml
