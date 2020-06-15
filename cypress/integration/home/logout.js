@@ -3,7 +3,7 @@
 describe('Logout', () => {
     it('Verifies that user can successfully logout from application.', () => {
         cy.log("*** Given ***")
-        cy.visit('https://www.saucedemo.com/inventory.html')
+        cy.visit('/inventory.html')
         cy.get('.bm-burger-button')
           .click()
 

@@ -3,7 +3,7 @@
 describe('About', () => {
     it('Verifies that app redirects to About page.', () => {
         cy.log("*** Given ***")
-        cy.visit('https://www.saucedemo.com/inventory.html')
+        cy.visit('/inventory.html')
         cy.get('.bm-burger-button')
           .click()
 

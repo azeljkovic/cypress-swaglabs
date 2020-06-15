@@ -6,7 +6,7 @@ describe('Reset app state', () => {
         cy.window().then((win) => {
             sessionStorage.setItem("cart-contents","[4,0,1]")
         })
-        cy.visit('https://www.saucedemo.com/inventory.html')
+        cy.visit('/inventory.html')
         cy.get('.bm-burger-button')
           .click()
 
