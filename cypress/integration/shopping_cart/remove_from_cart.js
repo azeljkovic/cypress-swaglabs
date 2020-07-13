@@ -17,8 +17,8 @@ describe('Remove products from cart', () => {
           .click()
 
         cy.log("*** When ***")
-        cy.xpath('//*[@class="inventory_details"]/button')
-        .click()
+        cy.get('.inventory_details_back_button')
+          .click({force: true})
 
         cy.log("*** Then ***")
         cy.get('.fa-layers-counter').should('not.exist')
