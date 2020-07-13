@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Run the tests
-                sh 'docker run -v $PWD:/test -w /test  cypress/included:4.10.0 --browser chrome'
+                sh 'docker run -v $PWD/cypress-swaglabs:/test -w /test  cypress/included:4.10.0 --browser chrome'
             }
         }
     }
