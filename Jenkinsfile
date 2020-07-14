@@ -15,7 +15,7 @@ pipeline {
                 // Run the tests
                 sh 'pwd'
                 sh 'ls'
-                sh 'docker pull cypress/included:4.10.0'
+                sh 'id'
                 sh 'docker run -t -v $PWD:/test -w /test  cypress/included:4.10.0 --browser chrome'
             }
         }
