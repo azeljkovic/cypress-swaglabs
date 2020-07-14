@@ -5,7 +5,7 @@ pipeline {
 
     agent {
         node {
-            label 'docker-agent'
+            //label 'docker-agent'
             image 'cypress/included:4.10.0'
         }
     }
