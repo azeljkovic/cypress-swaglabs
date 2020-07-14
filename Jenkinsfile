@@ -4,9 +4,6 @@ pipeline {
     // Run everything on an existing agent configured with a label 'docker-agent'.
 
     agent {
-        node {
-            label 'docker-agent'
-        }
         docker {
             image 'cypress/included:4.10.0'
         }
