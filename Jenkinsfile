@@ -27,7 +27,7 @@ pipeline {
                 echo "Running build ${env.BUILD_ID}"
                 sh "npm run cypress:ci"
           }
-
+        }
         //stage('Test') {
         //    steps {
         //        // Run the tests
